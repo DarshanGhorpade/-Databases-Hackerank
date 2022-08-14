@@ -308,13 +308,15 @@ A database used by a college’s application stores the relationship between stu
 
 Q28: __Database Normalization #4__
 
-```A database, normalized as per 2NF rules, has been split into 10 tables. Each of the tables has exactly two columns: one key attribute and one non-key attribute. What is the minimum number of tables required to express this database in 3NF form? Enter the integer in the text box below. Do not leave any leading or trailing spaces.
+```
+A database, normalized as per 2NF rules, has been split into 10 tables. Each of the tables has exactly two columns: one key attribute and one non-key attribute. What is the minimum number of tables required to express this database in 3NF form? Enter the integer in the text box below. Do not leave any leading or trailing spaces.
 ```
 ###### Answer: 10
 
 Q29: __Database Normalization #5__
 
-```Consider the following relation and determinants.
+```
+Consider the following relation and determinants.
 R(a, b,c,d)
 a,c -> b,d
 a,d -> b
@@ -327,7 +329,8 @@ Your answer should only be restricted to one of these numbers:1/2/3/3.5 Do not l
 
 Q30: __Database Normalization #6__
 
-```Let us take the example of a simple movie library. Each movie has a description, director, and serial number. Customers have a name, address, and membership number. Assume only one copy of each movie exists in the library. We are given the following relations and determinants. The keys for each relation are CAPITALIZED.
+```
+Let us take the example of a simple movie library. Each movie has a description, director, and serial number. Customers have a name, address, and membership number. Assume only one copy of each movie exists in the library. We are given the following relations and determinants. The keys for each relation are CAPITALIZED.
 ```
 _Relations (The key is CAPITALIZED):_
 customer(name,addr,MEMBERNO)
@@ -342,7 +345,8 @@ name,addr -> memberno
 memberno -> name,addr
 serialno,date -> memberno
 
-```The above relation is in _xNF_ form where x may take the following values {1,2,3,3.5} corresponding to {1NF, 2NF, 3NF and BCNF} respectively. 
+```
+The above relation is in _xNF_ form where x may take the following values {1,2,3,3.5} corresponding to {1NF, 2NF, 3NF and BCNF} respectively. 
 What is the maximum possible value of _x_ such that the above relation satisfies the _xNF_ form? 
 Your answer should only be restricted to one of these numbers:1/2/3/3.5. Do not leave any leading or trailing spaces.
 ```
@@ -350,7 +354,8 @@ Your answer should only be restricted to one of these numbers:1/2/3/3.5. Do not 
 
 Q31: __Database Normalization #7__
 
-```Let us take the example of a simple movie library. Each movie has a description, director, and serial number. Customers have a name, address, and membership number. Assume only one copy of each movie exists in the library. We are given the following relations and determinants:
+```
+Let us take the example of a simple movie library. Each movie has a description, director, and serial number. Customers have a name, address, and membership number. Assume only one copy of each movie exists in the library. We are given the following relations and determinants:
 ```
 _Relations:_
 movie(DESCRIPTION,serialno)
@@ -366,7 +371,8 @@ name,addr -> memberno
 memberno -> name,addr
 serialno,date -> memberno
 
-```The above relation is in _xNF_ form where _x_ may take the following values {1,2,3,3.5} corresponding to {1NF, 2NF, 3NF and BCNF} respectively. 
+```
+The above relation is in _xNF_ form where _x_ may take the following values {1,2,3,3.5} corresponding to {1NF, 2NF, 3NF and BCNF} respectively. 
 What is the maximum possible value of _x_ such that the above relation satisfies the _xNF_ form? 
 Your answer should only be restricted to one of these numbers: 1/2/3/3.5. Do not leave any leading or trailing spaces.
 ```
@@ -375,14 +381,16 @@ Your answer should only be restricted to one of these numbers: 1/2/3/3.5. Do not
 
 Q32: __Database Normalization #8__
 
-```Let us take the example of a simple movie library. Each movie has a description, director, and serial number. Customers have a name, address, and membership number. Assume only one copy of each movie exists in the library. We are given the following relations and determinants. The keys for each relation are CAPITALIZED.
+```
+Let us take the example of a simple movie library. Each movie has a description, director, and serial number. Customers have a name, address, and membership number. Assume only one copy of each movie exists in the library. We are given the following relations and determinants. The keys for each relation are CAPITALIZED.
 ```
 _Relations (The key is CAPITALIZED):_
 customer(name,addr,MEMBERNO)
 movie(DESCRIPTION,director,serialno)
 borrow(memberno,DATE,SERIALNO)
 
-```Which of these determinants is a NON-KEY dependency? In the text box, only enter the index number (1-6) of the dependency which you have identified as non-key.
+```
+Which of these determinants is a NON-KEY dependency? In the text box, only enter the index number (1-6) of the dependency which you have identified as non-key.
 ```
 1.  description->director,serialno
 2.  serialno->description
@@ -391,14 +399,16 @@ borrow(memberno,DATE,SERIALNO)
 5.  memberno -> name,addr
 6.  serialno,date -> memberno
 
-```Output Format
+```
+Output Format
 In the text box, only enter the index number (1-6) of the dependency which you have identified as non-key.
 ```
 ###### Answer: 3
 
 Q33: __Database Normalization #9__
 
-```Consider the following relation and determinants. The key(s) are bolded. 
+```
+Consider the following relation and determinants. The key(s) are bolded. 
 R(a,b,c,d,e)
 Which of these determinants is a NON-CANDIDATE key? In the text box, only enter the index number (1-3) of the dependency which you have identified as non-key.
 a,c -> b,d,e
@@ -409,7 +419,8 @@ a,c,e -> b,d
 
 Q34: __Database Normalization #10__
 
-```The following table stores rows of information about pizza deliveries. The three columns correspond to the Restaurant name, Crust, Delivery Area. We convert this table into Fourth Normal Form and so we end up creating two tables, each with two columns and N rows. (Both the new tables have an equal number of rows)
+```
+The following table stores rows of information about pizza deliveries. The three columns correspond to the Restaurant name, Crust, Delivery Area. We convert this table into Fourth Normal Form and so we end up creating two tables, each with two columns and N rows. (Both the new tables have an equal number of rows)
 ```
 Restaurant | Crust | Delivery Area
 ------------ | ------------- | -------------
@@ -433,7 +444,8 @@ In the text box below, enter the value of the integer N.
 
 Q35: __Databases - Relational Calculus__
 
-```We execute the following query (in Relational Calculus) on a set of integers S. 
+```
+We execute the following query (in Relational Calculus) on a set of integers S. 
 For the given set S, what will be the answer? Fill up the answer box with the required integer.
 S = {4,5,6,7,10,11,19,18,3}
 ```
@@ -442,7 +454,8 @@ S = {4,5,6,7,10,11,19,18,3}
 
 Q36: __Databases - Keys__
 
-```A database table with three fields (bookname, author, language) has been created. If the table is as provided below, which of these three fields may be used as the primary key?
+```
+A database table with three fields (bookname, author, language) has been created. If the table is as provided below, which of these three fields may be used as the primary key?
 ```
 bookname | author | language
 -----|-----|-----
@@ -453,7 +466,8 @@ Chandrakanta | Devaki Nandan Khatri | Hindi
 Hamlet | William Shakespeare | English
 The Merchant of Venice | William Shakespeare | English
 
-```Output Format
+```
+Output Format
 Only fill in the name of the field which may be used as the primary key. Grading is case-sensitive.
 ```
 ###### Answer: bookname
@@ -480,7 +494,8 @@ B | C | D
 1 | 55 | 8 
 4 | 3 | 9
 
-```The following tuple is in the result of the natural join between R and S where tuples are structured as (A,B,C,D):
+```
+The following tuple is in the result of the natural join between R and S where tuples are structured as (A,B,C,D):
 27, X, Y, Z
 In the answer box, fill up the values of the integers X, Y and Z in three separate lines. e.g.
 10
@@ -516,7 +531,8 @@ A | B | C
 4 | 5 | 6 
 1 | 2 | 3
 
-```The differences (R-S) is computed and the following tuple is found to be present in the result. Assume that the schema of the result is (A,B,C).
+```
+The differences (R-S) is computed and the following tuple is found to be present in the result. Assume that the schema of the result is (A,B,C).
 4, b, c
 Find the integers b and c. Fill in the values in the answer box, each on a new line.
 Output Format
@@ -535,4 +551,4 @@ A | B | C
 ###### c=3
 
 
-####Solution by Darshan Ghorpade
+#### Solution by Darshan Ghorpade
