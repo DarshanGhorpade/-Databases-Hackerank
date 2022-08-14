@@ -244,7 +244,8 @@ What is the source of the cube metadata for OLAP?
 
 Q22: __OLAP Name(s)__
 
-```Which of these are alternate names for an OLAP Cube? The options in the top row are a and b respecitvely and those in the bottom row are c and d.
+```
+Which of these are alternate names for an OLAP Cube? The options in the top row are a and b respecitvely and those in the bottom row are c and d.
 ```
 ###### Answer: Multidimensional Cube, HyperCube
 
@@ -259,7 +260,8 @@ Which of these provides a total view of the organization?
 
 Q24: __OLAP Operation Types__
 
-```Consider a fact table DataPoints(D1,D2,D3,x), and the following three queries:
+```
+Consider a fact table DataPoints(D1,D2,D3,x), and the following three queries:
 
 Q1: Select D1,D2,D3,Sum(x) From DataPoints Group By D1,D2,D3
 
@@ -273,7 +275,8 @@ Suppose attributes D1, D2, and D3 have n1, n2, and n3 different values respectiv
 
 Q25: __Database Normalization #1 - 1NF__
 
-```The following unnormalized table named PRODUCT is transformed to first normal form (1NF) by splitting it into two tables which have X and Y rows (such that X <Y) respectively. Both the tables have Z columns.
+```
+The following unnormalized table named PRODUCT is transformed to first normal form (1NF) by splitting it into two tables which have X and Y rows (such that X <Y) respectively. Both the tables have Z columns.
 ```
 *Product-ID* | *Colors* | *Price*
 ------------ | ------------- | -------------
@@ -281,7 +284,8 @@ Q25: __Database Normalization #1 - 1NF__
 2 | Blue | 18.0
 3 | Yellow,Pink | 2.5
 
-```What are the values of X, Y, Z? Enter these integers, each on a new line, in the text-box below. Do not leave any leading or trailing spaces.
+```
+What are the values of X, Y, Z? Enter these integers, each on a new line, in the text-box below. Do not leave any leading or trailing spaces.
 ```
 ###### Answer: 
 ###### 3 (1, 15.0), (2, 18.0), (3, 2.5)
@@ -290,13 +294,15 @@ Q25: __Database Normalization #1 - 1NF__
 
 Q26: __Database Normalization #2 - 1/2/3 NF__
 
-```A particular database is normalized to satisfy a particular level of normalization (either 1NF or 2NF or 3NF). One of the tables contains, among other fields, a column for the City and a column for the Zip Code. Assuming that there is a many-to-one mapping between the set of Zip Code(s) and City, we may conclude that the database is definitely NOT in xNF form. What is the integer x (1, 2, or 3)? Fill your answer in the text box below.
+```
+A particular database is normalized to satisfy a particular level of normalization (either 1NF or 2NF or 3NF). One of the tables contains, among other fields, a column for the City and a column for the Zip Code. Assuming that there is a many-to-one mapping between the set of Zip Code(s) and City, we may conclude that the database is definitely NOT in xNF form. What is the integer x (1, 2, or 3)? Fill your answer in the text box below.
 ```
 ###### Answer: NOT in 3NF
 
 Q27: __Database Normalization #3__
 
-```A database used by a college’s application stores the relationship between students and the courses they are enrolled in. We have information for each STUDENT (such as name, date of birth, date of enrollment, student-id) and COURSE (course code, instructor, etc.). In real life, a student takes several courses simultaneously while a subject is studied by several students. We need to capture this many-to-many relationship in our database. From the above information, what is the minimum number of tables required to structure this database in accordance with the rules of 2NF normalization?
+```
+A database used by a college’s application stores the relationship between students and the courses they are enrolled in. We have information for each STUDENT (such as name, date of birth, date of enrollment, student-id) and COURSE (course code, instructor, etc.). In real life, a student takes several courses simultaneously while a subject is studied by several students. We need to capture this many-to-many relationship in our database. From the above information, what is the minimum number of tables required to structure this database in accordance with the rules of 2NF normalization?
 ```
 ###### Answer: 3
 
