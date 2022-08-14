@@ -551,4 +551,4 @@ A | B | C
 ###### c=3
 
 
-#### Solution by Darshan Ghorpade[https://github.com/DarshanGhorpade]
+#### Solution by [Darshan Ghorpade](https://github.com/DarshanGhorpade)
